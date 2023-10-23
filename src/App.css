@@ -1,3 +1,5 @@
+/* TOP HEADER COMPONENT */
+
 .top-header {
     display: flex;
     align-items: center;
@@ -17,7 +19,54 @@
     height: 4rem;
 }
 
+/* NAVIGATION COMPONENT */
+
 .navigation {
     display: flex;
     gap: 1rem;
+}
+
+/* PARK COMPONENT */
+
+.park {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* MAP COMPONENT */
+
+.map {
+    border: 1px solid green;
+    position: relative;
+    padding: 3rem;
+}
+
+.map-svg {
+    width: 100%;
+}
+.map-svg path {
+    padding: 3rem;
+}
+
+/* MAP DOT COMPONENT */
+
+.map-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid green;
+    width: fit-content;
+    text-align: center;
+    offset-path: path("M1.5 1.5V429H363H635V763H217V1081.5H343.5V944H543.5V1081.5H635V1190.5H1.5");
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.map-dot h4 {
+    margin: 0;
+}
+
+.map-dot svg {
+    border: 1px solid white;
 }
