@@ -1,0 +1,23 @@
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.top-header__logo {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top-header__logo img {
+    height: 4rem;
+}
+
+.navigation {
+    display: flex;
+    gap: 1rem;
+}
