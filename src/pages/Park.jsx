@@ -1,19 +1,9 @@
 import { motion } from "framer-motion";
 import Map from "../components/Map";
+import useCustomAnimation from "../hooks/useCustomAnimation";
 
 function Park() {
-
-    const initial = {
-        x: -30,
-        opacity: 0
-    }
-    const animate = {
-        x: 0,
-        opacity: 1,
-        transition: {
-            duration: .8
-        }
-    }
+    const { initial, animate } = useCustomAnimation();
 
     return (
         <section className="park">
