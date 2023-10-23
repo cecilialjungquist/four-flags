@@ -31,42 +31,43 @@
 .park {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 1rem;
 }
 
 /* MAP COMPONENT */
 
 .map {
-    border: 1px solid green;
     position: relative;
     padding: 3rem;
-}
-
-.map-svg {
-    width: 100%;
-}
-.map-svg path {
-    padding: 3rem;
+    margin-top: 2.5rem;
 }
 
 /* MAP DOT COMPONENT */
 
 .map-dot {
     position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid green;
-    width: fit-content;
+    top: 25px;
     text-align: center;
     offset-path: path("M1.5 1.5V429H363H635V763H217V1081.5H343.5V944H543.5V1081.5H635V1190.5H1.5");
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
 .map-dot h4 {
     margin: 0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
-.map-dot svg {
-    border: 1px solid white;
+#map-dot-0,
+#map-dot-3,
+#map-dot-4 {
+    transform: rotate(.75turn);
+}
+
+#map-dot-5,
+#map-dot-6 {
+    transform: rotate(.5turn);
 }
