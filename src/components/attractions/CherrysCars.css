@@ -67,7 +67,7 @@
         offset-distance: 0%;
     } 
     100% {
-        offset-distance: 50%;
+        offset-distance: 49%;
     }
 }
 @keyframes moveTwo {
@@ -75,7 +75,7 @@
         offset-distance: 50%;
     } 
     100% {
-        offset-distance: 100%;
+        offset-distance: 99%;
     }
 }
 
@@ -83,14 +83,17 @@
 @keyframes collision {
     0%{
         box-shadow: 0px 0px 30px #FC6BFF;
+        border: 1px solid black;
         transform: scaleX(0.6);
     } 
     2%, 98% {
         box-shadow: none;
+        border: none;
         transform: scaleX(1);
     }
     100% {
         box-shadow: 0px 0px 30px #FC6BFF;
+        border: 1px solid black;
         transform: scaleX(0.6);
     }
 }
