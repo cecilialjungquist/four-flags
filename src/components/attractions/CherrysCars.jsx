@@ -11,7 +11,7 @@ function CherrysCars() {
         <Overlay>
             <article className="cherrys-cars">
                 <AttractionHeader name={"Cherry's Cars"} desc={desc} />
-                <div className="cherrys-cars__animation">
+                <section className="cherrys-cars__animation">
                     <div className="cherrys-cars__dot cherrys-cars__dot-1"></div>
                     <div className="cherrys-cars__dot cherrys-cars__dot-2"></div>
 
@@ -20,7 +20,7 @@ function CherrysCars() {
 
                     <div className="cherrys-cars__dot cherrys-cars__dot-5"></div>
                     <div className="cherrys-cars__dot cherrys-cars__dot-6"></div>
-                </div>
+                </section>
             </article>
         </Overlay>
     );

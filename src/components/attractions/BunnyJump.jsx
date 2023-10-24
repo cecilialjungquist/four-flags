@@ -10,7 +10,7 @@ function BunnyJump() {
             <article className="bunny-jump">
                 <AttractionHeader name={'Bunny Jump'} desc={desc} />
 
-                <div className="bunny-jump__svg">
+                <section className="bunny-jump__svg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="361" height="331" viewBox="0 0 361 331" fill="none">
                         <path d="M2 329H180.5M359 329H180.5M180.5 329V2" stroke="#FC6BFF" strokeWidth="4" strokeLinecap="round" />
                     </svg>
@@ -21,7 +21,7 @@ function BunnyJump() {
                         <path d="M24 108C24 114.627 18.6274 120 12 120C5.37258 120 0 114.627 0 108C0 101.373 5.37258 96 12 96C18.6274 96 24 101.373 24 108Z" fill="#FC6BFF" />
                         <path d="M24 140C24 146.627 18.6274 152 12 152C5.37258 152 0 146.627 0 140C0 133.373 5.37258 128 12 128C18.6274 128 24 133.373 24 140Z" fill="#FC6BFF" />
                     </svg>
-                </div>
+                </section>
             </article>
         </Overlay>
     );
