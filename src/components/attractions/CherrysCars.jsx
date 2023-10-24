@@ -8,7 +8,9 @@ function CherrysCars() {
         <Overlay>
             <article className="cherrys-cars">
                 <AttractionHeader name={"Cherry's Cars"} desc={desc} />
+                <div className="cherrys-cars__svg">
 
+                </div>
             </article>
         </Overlay>
     );

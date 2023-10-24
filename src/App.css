@@ -58,7 +58,7 @@
 
 .map-dot h4 {
     margin: 0;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 #map-dot-0,
@@ -105,5 +105,5 @@
     display: flex;
     border-radius: 1rem;
     gap: 2rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
