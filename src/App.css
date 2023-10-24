@@ -81,3 +81,29 @@
     display: flex;
     place-content: center;
 }
+
+/* OVERLAY COMPONENT */
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay > article {
+    max-width: 900px;
+    background-color: #1a1a1a;
+    padding: 4rem;
+    display: flex;
+    border-radius: 1rem;
+    gap: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}

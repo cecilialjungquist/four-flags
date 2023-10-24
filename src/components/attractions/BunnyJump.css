@@ -1,0 +1,43 @@
+.bunny-jump__svg {
+    position: relative;
+}
+
+.bunny-jump__dots {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    offset: path("M0 327H178.5M357 327H178.5M178.5 327V0");
+    offset-distance: 55%;
+    animation: move 7s ease-out infinite;
+    transform: translateZ();
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 55%;
+    }
+
+    40% {
+        offset-distance: 95%;
+    }
+
+    50% {
+        offset-distance: 80%;
+    }
+
+    60% {
+        offset-distance: 85%;
+    }
+
+    70% {
+        offset-distance: 70%;
+    }
+
+    80% {
+        offset-distance: 75%;
+    }
+
+    100% {
+        offset-distance: 55%;
+    }
+}

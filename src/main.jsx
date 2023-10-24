@@ -6,6 +6,7 @@ import App from './App.jsx';
 import Home from './pages/Home.jsx';
 import Park from './pages/Park.jsx';
 import Accomodation from './pages/Accomodation.jsx';
+import BunnyJump from './components/attractions/BunnyJump';
 
 const router = createHashRouter([
   {
@@ -17,8 +18,14 @@ const router = createHashRouter([
         element: <Home />
       },
       {
-        path: 'park',
-        element: <Park />
+        path: 'the-park',
+        element: <Park />,
+        children: [
+          {
+            path: 'bunny-jump',
+            element: <BunnyJump />
+          }
+        ]
       },
       {
         path: 'accomodation',

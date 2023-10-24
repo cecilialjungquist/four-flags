@@ -1,4 +1,4 @@
-function useCustomAnimation() {
+function useStandardAnimation() {
     const initial = {
         x: -30,
         opacity: 0
@@ -17,4 +17,4 @@ function useCustomAnimation() {
     return { initial, animate };
 }
 
-export default useCustomAnimation;
+export default useStandardAnimation;
