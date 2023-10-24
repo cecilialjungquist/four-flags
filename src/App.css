@@ -71,3 +71,13 @@
 #map-dot-6 {
     transform: rotate(.5turn);
 }
+
+.map-dot__button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #FC6BFF;
+    padding: 0;
+    display: flex;
+    place-content: center;
+}
