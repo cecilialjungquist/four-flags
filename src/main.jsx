@@ -7,6 +7,8 @@ import Home from './pages/Home.jsx';
 import Park from './pages/Park.jsx';
 import Accomodation from './pages/Accomodation.jsx';
 import BunnyJump from './components/attractions/BunnyJump';
+import CherrysCars from './components/attractions/CherrysCars';
+import TheTeaCup from './components/attractions/TheTeaCup';
 
 const router = createHashRouter([
   {
@@ -24,6 +26,14 @@ const router = createHashRouter([
           {
             path: 'bunny-jump',
             element: <BunnyJump />
+          },
+          {
+            path: 'cherrys-cars',
+            element: <CherrysCars />
+          },
+          {
+            path: 'the-tea-cup',
+            element: <TheTeaCup />
           }
         ]
       },

@@ -26,7 +26,7 @@ function MapDot({ name, offsetDistance, id }) {
     };
 
     function handleClick() {
-        const attraction = name.split(' ').join('-').toLowerCase();
+        const attraction = name.split(' ').join('-').replace("'", '').toLowerCase();
         navigate(`/the-park/${attraction}`);
     }
 
