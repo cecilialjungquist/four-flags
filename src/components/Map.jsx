@@ -34,33 +34,18 @@ function Map() {
         }
     ];
 
-    const renderedDots = mapDots.map((dot, i) => <MapDot 
-        name={dot.name} 
-        offsetDistance={dot.offsetDistance} 
+    const renderedDots = mapDots.map(({ name, offsetDistance}, i) => <MapDot 
+        name={name}
+        offsetDistance={offsetDistance}
         id={i} 
         key={i} />
     )
 
-    const svgVariants = {
-        hidden: {
-            opacity: 0
-        },
-        visible: {
-            opacity: 1,
-            transition: {
-                delay: .2,
-                duration: .2
-            }
-        }
-    }
-
     const pathVariants = {
         hidden: {
-            opacity: 0,
             pathLength: 0
         },
         visible: {
-            opacity: 1,
             pathLength: 1,
             transition: {
                 duration: 3
@@ -70,9 +55,9 @@ function Map() {
 
     return (
         <section className="map">
-            <motion.svg className="map-svg" variants={svgVariants} initial="hidden" animate="visible" xmlns="http://www.w3.org/2000/svg" width="637" height="1192" viewBox="0 0 637 1192" fill="none">
-                <motion.path variants={pathVariants} d="M1.5 1.5V429H363H635V763H217V1081.5H343.5V944H543.5V1081.5H635V1190.5H1.5" stroke="#FC6BFF" strokeWidth="3" strokeLinecap="round" />
-            </motion.svg>
+            <svg className="map-svg" xmlns="http://www.w3.org/2000/svg" width="637" height="1192" viewBox="0 0 637 1192" fill="none">
+                <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M1.5 1.5V429H363H635V763H217V1081.5H343.5V944H543.5V1081.5H635V1190.5H1.5" stroke="#FC6BFF" strokeWidth="3" strokeLinecap="round" />
+            </svg>
             {renderedDots}
         </section>
     );

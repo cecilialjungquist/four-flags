@@ -17,6 +17,7 @@ function Park() {
             </motion.section>
             <Map />
             <section className="park__attraction">
+                {/* Outlet from Map component */}
                 <Outlet />
             </section>
         </section>
