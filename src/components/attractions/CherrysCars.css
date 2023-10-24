@@ -1,0 +1,37 @@
+.cherrys-cars__svg {
+    width: 24.125rem;
+    height: 25.375rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    border: 4px solid #FC6BFF;
+    padding: 2rem;
+}
+
+.cherrys-cars__dot {
+    offset: path("M116 10.0002C29.2001 -25.9998 23.4999 54.2268 6.50014 122C-3.80877 163.099 1.30014 201.2 6.50014 260C13.0001 333.5 278.5 188.5 162 186.5C68.8001 184.9 102.167 131.834 130.5 105.5C161.833 88.6669 202.8 46.0002 116 10.0002Z");
+}
+
+.cherrys-cars__dot-1 {
+    animation: moveOne 3s infinite cubic-bezier(.29,.77,.87,.41) alternate;
+}
+
+.cherrys-cars__dot-2 {
+    animation: moveTwo 3s cubic-bezier(.29,.77,.87,.41) infinite alternate-reverse;
+}
+
+@keyframes moveOne {
+    from {
+        offset-distance: 0%;
+    } 
+    to {
+        offset-distance: 50%;
+    }
+}
+@keyframes moveTwo {
+    from {
+        offset-distance: 50%;
+    } 
+    to {
+        offset-distance: 100%;
+    }
+}

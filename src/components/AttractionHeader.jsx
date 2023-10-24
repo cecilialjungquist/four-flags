@@ -5,15 +5,13 @@ function AttractionHeader({ name, desc }) {
     const { initial, animate } = useStandardAnimation();
 
     return (
-        <header>
-            <motion.h2
-                initial={initial}
-                animate={animate}
-            >
-                {name}
-            </motion.h2>
+        <motion.header
+            initial={initial}
+            animate={animate}
+        >
+            <h2>{name}</h2>
             <p>{desc}</p>
-        </header>
+        </motion.header>
     );
 }
 
