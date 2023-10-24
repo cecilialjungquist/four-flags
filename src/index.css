@@ -63,3 +63,7 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+a.active {
+  color: #FC6BFF;
+}

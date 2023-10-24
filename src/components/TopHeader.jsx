@@ -1,14 +1,16 @@
 import Navigation from "./Navigation";
 import logo from '../assets/logo.svg';
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function TopHeader() {
+    const navigate = useNavigate();
+
     return (
         <header className="top-header">
-            <NavLink className="top-header__logo">
+            <aside onClick={() => navigate('/')} className="top-header__logo">
                 Four Flags
                 <img src={logo}/>
-            </NavLink>
+            </aside>
             <Navigation />
         </header>
     );

@@ -1,37 +1,96 @@
-.cherrys-cars__svg {
+.cherrys-cars__animation {
     width: 24.125rem;
     height: 25.375rem;
     flex-shrink: 0;
     border-radius: 1rem;
     border: 4px solid #FC6BFF;
     padding: 2rem;
+    position: relative;
 }
 
 .cherrys-cars__dot {
+    position: absolute;
+    top: 32px;
+    height: 25px;
+    width: 25px;
+    background-color: #FC6BFF;
+    border-radius: 50%;
+}
+
+.cherrys-cars__dot-1,
+.cherrys-cars__dot-3 {
+    animation: 
+        moveOne 3s infinite cubic-bezier(.29,.77,.87,.41) alternate,
+        collision 3s cubic-bezier(.29,.77,.87,.41) infinite alternate;;
+}
+.cherrys-cars__dot-2,
+.cherrys-cars__dot-4 {
+    animation: 
+        moveTwo 3s cubic-bezier(.29,.77,.87,.41) infinite alternate-reverse,
+        collision 3s cubic-bezier(.29,.77,.87,.41) infinite alternate;;
+}
+
+.cherrys-cars__dot-5 {
+    animation: 
+        moveOne 3s cubic-bezier(.29,.77,.87,.41) infinite alternate-reverse,
+        collision 3s cubic-bezier(.29,.77,.87,.41) infinite alternate;
+}
+.cherrys-cars__dot-6 {
+    animation: 
+        moveTwo 3s cubic-bezier(.29,.77,.87,.41) infinite alternate,
+        collision 3s cubic-bezier(.29,.77,.87,.41) infinite alternate;
+}
+
+.cherrys-cars__dot-1,
+.cherrys-cars__dot-2 {
+    top: 64px;
+    animation-delay: .4s;
     offset: path("M116 10.0002C29.2001 -25.9998 23.4999 54.2268 6.50014 122C-3.80877 163.099 1.30014 201.2 6.50014 260C13.0001 333.5 278.5 188.5 162 186.5C68.8001 184.9 102.167 131.834 130.5 105.5C161.833 88.6669 202.8 46.0002 116 10.0002Z");
 }
 
-.cherrys-cars__dot-1 {
-    animation: moveOne 3s infinite cubic-bezier(.29,.77,.87,.41) alternate;
+.cherrys-cars__dot-3,
+.cherrys-cars__dot-4 {
+    animation-delay: .8s;
+    offset: path("M36.4832 90.6166C36.4829 -27.8028 116.498 -10.2069 160.245 37.315C187.217 66.6138 157.892 113.643 216.461 169.502C275.031 225.362 206.184 288.342 160.245 320.877C92.4123 368.918 49.3813 333.989 15.5646 226.534C-26.7064 92.2157 36.4834 182.294 36.4832 90.6166Z");
+    left: 90px;
 }
 
-.cherrys-cars__dot-2 {
-    animation: moveTwo 3s cubic-bezier(.29,.77,.87,.41) infinite alternate-reverse;
+.cherrys-cars__dot-5, 
+.cherrys-cars__dot-6 {
+    left: 190px;
+    offset: path("M99.0009 3.99994C63.3467 -13.5394 62.6285 56.0775 52.5009 94.4999C40.5066 140.004 57.9851 168.262 52.5009 215C46.0099 270.316 -29.4763 284.475 15 318C48.8281 343.498 121.61 380.794 124.001 338.5C130.501 223.5 154.996 168.987 124.001 67.9999C116.128 42.3482 123.078 15.8442 99.0009 3.99994Z");
 }
+
 
 @keyframes moveOne {
-    from {
+    0%{
         offset-distance: 0%;
     } 
-    to {
+    100% {
         offset-distance: 50%;
     }
 }
 @keyframes moveTwo {
-    from {
+    0%{
         offset-distance: 50%;
     } 
-    to {
+    100% {
         offset-distance: 100%;
+    }
+}
+
+
+@keyframes collision {
+    0%{
+        box-shadow: 0px 0px 30px #FC6BFF;
+        transform: scaleX(0.6);
+    } 
+    2%, 98% {
+        box-shadow: none;
+        transform: scaleX(1);
+    }
+    100% {
+        box-shadow: 0px 0px 30px #FC6BFF;
+        transform: scaleX(0.6);
     }
 }
