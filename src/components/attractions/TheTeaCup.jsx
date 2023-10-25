@@ -4,8 +4,7 @@ import './TheTeaCup.css';
 import useFetchParkInfo from "../../hooks/useFetchParkInfo";
 
 function TheTeaCup() {
-    const [ attraction ] = useFetchParkInfo({ isAttraction: true })
-        .filter(attraction => attraction.name === "The Tea Cup");
+    const attraction = useFetchParkInfo({ name: "The Tea Cup" });
 
     return (
         <Overlay className={"the-tea-cup"}>

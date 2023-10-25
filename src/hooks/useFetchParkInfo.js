@@ -1,5 +1,5 @@
 function useFetchParkInfo( options = {} ) {
-    const { isAttraction = null } = options;
+    const { isAttraction = null, name = null } = options;
 
     const parkInfo = [
         {
@@ -54,7 +54,9 @@ function useFetchParkInfo( options = {} ) {
     ];
     
 
-    if (isAttraction === true) {
+    if (name) {
+        return parkInfo.find(item => item.name === name) || null;
+    } else if (isAttraction === true) {
         return parkInfo.filter(item => item.isAttraction === true);
     } else if (isAttraction === false) {
         return parkInfo.filter(item => item.isAttraction === false)

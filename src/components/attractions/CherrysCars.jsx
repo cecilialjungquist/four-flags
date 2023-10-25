@@ -4,8 +4,8 @@ import './CherrysCars.css';
 import useFetchParkInfo from "../../hooks/useFetchParkInfo";
 
 function CherrysCars() {
-    const [ attraction ] = useFetchParkInfo({ isAttraction: true })
-        .filter(attraction => attraction.name === "Cherry's Cars");
+    const attraction = useFetchParkInfo({ name: "Cherry's Cars" });
+
 
     return (
         <Overlay className={"cherrys-cars"}>
