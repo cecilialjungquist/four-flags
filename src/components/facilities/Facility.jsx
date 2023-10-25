@@ -10,6 +10,9 @@ function Facility() {
     return ( 
         <Overlay className={"facility"}>
             <OverlayHeader name={facility.name} desc={facility.desc} />
+            <figure>
+                <img src={`src/assets/${facility.svg}`} />
+            </figure>
         </Overlay>
     );
 }

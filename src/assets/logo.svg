@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="121" height="101" viewBox="0 0 121 101" fill="none">
-  <path d="M49.6522 33.9565L2 14.1304V44.3913L49.6522 33.9565Z" fill="#0B0404"/>
-  <path d="M2 76.7391V44.3913M2 44.3913V14.1304L49.6522 33.9565L2 44.3913Z" stroke="#FC6BFF" stroke-width="3" stroke-linecap="round"/>
-  <path d="M96.9565 22.8261L49.3043 3V33.2609L96.9565 22.8261Z" fill="#0B0404"/>
-  <path d="M49.3043 65.6087V33.2609M49.3043 33.2609V3L96.9565 22.8261L49.3043 33.2609Z" stroke="#FC6BFF" stroke-width="3" stroke-linecap="round"/>
-  <path d="M115.739 45.087L68.0869 25.2609V55.5217L115.739 45.087Z" fill="#0B0404"/>
-  <path d="M68.0869 87.8696V55.5217M68.0869 55.5217V25.2609L115.739 45.087L68.0869 55.5217Z" stroke="#FC6BFF" stroke-width="3" stroke-linecap="round"/>
-  <path d="M73.3044 56.2174L25.6522 36.3913V66.6522L73.3044 56.2174Z" fill="#0B0404"/>
-  <path d="M25.6522 99V66.6522M25.6522 66.6522V36.3913L73.3044 56.2174L25.6522 66.6522Z" stroke="#FC6BFF" stroke-width="3" stroke-linecap="round"/>
+<svg width="363" height="305" viewBox="0 0 363 305" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M150.913 99.739L2 37.7825V132.348L150.913 99.739Z" fill="#440101"/>
+<path d="M2 233.435V132.348M2 132.348V37.7825L150.913 99.739L2 132.348Z" stroke="#FC6BFF" stroke-width="3" stroke-linecap="round"/>
+<path d="M298.739 64.9565L149.826 3V97.5652L298.739 64.9565Z" fill="#440101"/>
+<path d="M149.826 198.652V97.5652M149.826 97.5652V3L298.739 64.9565L149.826 97.5652Z" stroke="#FC6BFF" stroke-width="3" stroke-linecap="round"/>
+<path d="M357.435 134.522L208.522 72.5657V167.131L357.435 134.522Z" fill="#440101"/>
+<path d="M208.522 268.218V167.131M208.522 167.131V72.5657L357.435 134.522L208.522 167.131Z" stroke="#FC6BFF" stroke-width="3" stroke-linecap="round"/>
+<path d="M224.826 169.304L75.9128 107.348V201.913L224.826 169.304Z" fill="#440101"/>
+<path d="M75.9128 303V201.913M75.9128 201.913V107.348L224.826 169.304L75.9128 201.913Z" stroke="#FC6BFF" stroke-width="3" stroke-linecap="round"/>
 </svg>

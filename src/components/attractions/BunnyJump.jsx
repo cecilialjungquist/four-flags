@@ -6,7 +6,6 @@ import useFetchParkInfo from '../../hooks/useFetchParkInfo';
 function BunnyJump() {
     const attraction = useFetchParkInfo({ name: "Bunny Jump" });
 
-
     return (
         <Overlay className={"bunny-jump"}>
             <OverlayHeader name={attraction.name} desc={attraction.desc} />

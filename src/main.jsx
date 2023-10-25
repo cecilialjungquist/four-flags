@@ -10,6 +10,7 @@ import BunnyJump from './components/attractions/BunnyJump';
 import CherrysCars from './components/attractions/CherrysCars';
 import TheTeaCup from './components/attractions/TheTeaCup';
 import Facility from './components/facilities/Facility';
+import TheCreepyCastle from './components/attractions/TheCreepyCastle';
 
 const router = createHashRouter([
   {
@@ -35,6 +36,10 @@ const router = createHashRouter([
           {
             path: 'the-tea-cup',
             element: <TheTeaCup />
+          },
+          {
+            path: 'the-creepy-castle',
+            element: <TheCreepyCastle />
           },
           {
             path: 'facilities/:id',
