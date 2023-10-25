@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
-function Overlay({ children }) {
+function Overlay({ className, children }) {
     const [isVisible, setIsVisible] = useState(true);
     const navigate = useNavigate();
 
@@ -23,7 +23,9 @@ function Overlay({ children }) {
                     animate={{ opacity: 1, transition: { duration: .3 } }}
                     exit={{ opacity: 0, transition: { duration: .2 } }}
                 >
-                    {children}
+                    <article className={className}>
+                        {children}
+                    </article>
                 </motion.section>
             }
         </AnimatePresence>

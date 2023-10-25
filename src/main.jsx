@@ -9,6 +9,7 @@ import Accomodation from './pages/Accomodation.jsx';
 import BunnyJump from './components/attractions/BunnyJump';
 import CherrysCars from './components/attractions/CherrysCars';
 import TheTeaCup from './components/attractions/TheTeaCup';
+import Facility from './components/facilities/Facility';
 
 const router = createHashRouter([
   {
@@ -34,6 +35,10 @@ const router = createHashRouter([
           {
             path: 'the-tea-cup',
             element: <TheTeaCup />
+          },
+          {
+            path: 'facilities/:id',
+            element: <Facility />
           }
         ]
       },

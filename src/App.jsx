@@ -9,6 +9,7 @@ function App() {
     <>
       <TopHeader />
       <main>
+        {/* Outlet via TopHeader and Navigation */}
         <Outlet />
       </main>
 

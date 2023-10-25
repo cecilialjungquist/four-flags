@@ -1,7 +1,7 @@
 import useStandardAnimation from "../hooks/useStandardAnimation";
 import { motion } from "framer-motion";
 
-function AttractionHeader({ name, desc }) {
+function OverlayHeader({ name, desc }) {
     const { initial, animate } = useStandardAnimation();
 
     return (
@@ -15,4 +15,4 @@ function AttractionHeader({ name, desc }) {
     );
 }
 
-export default AttractionHeader;
+export default OverlayHeader;

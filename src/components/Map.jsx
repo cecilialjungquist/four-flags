@@ -1,44 +1,16 @@
 import { motion } from "framer-motion";
 import MapDot from "./MapDot";
+import useFetchParkInfo from "../hooks/useFetchParkInfo";
 
 function Map() {
+    const mapDots = useFetchParkInfo();
 
-    const mapDots = [
-        {
-            name: 'Entrance',
-            offsetDistance: '0%'
-        },
-        {
-            name: 'Tickets',
-            offsetDistance: '18%'
-        },
-        {
-            name: 'Toilets',
-            offsetDistance: '22%'
-        },
-        {
-            name: 'Bunny Jump',
-            offsetDistance: '33%'
-        },
-        {
-            name: "Cherry's Cars",
-            offsetDistance: '36%'
-        },
-        {
-            name: "Grandma's",
-            offsetDistance: '42%'
-        },
-        {
-            name: "The Tea Cup",
-            offsetDistance: '46%'
-        }
-    ];
-
-    const renderedDots = mapDots.map(({ name, offsetDistance}, i) => <MapDot 
-        name={name}
-        offsetDistance={offsetDistance}
-        id={i} 
-        key={i} />
+    const renderedDots = mapDots.map(dot => <MapDot 
+        name={dot.name}
+        offsetDistance={dot.offsetDistance}
+        isAttraction={dot.isAttraction}
+        id={dot.id} 
+        key={dot.id} />
     )
 
     const pathVariants = {
