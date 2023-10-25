@@ -23,6 +23,7 @@
     border-radius: 50%;
     animation: move 5s linear infinite;
     animation-delay: .5s;
+    opacity: 0;
 }
 
 

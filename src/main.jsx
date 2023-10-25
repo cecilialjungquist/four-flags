@@ -11,6 +11,7 @@ import CherrysCars from './components/attractions/CherrysCars';
 import TheTeaCup from './components/attractions/TheTeaCup';
 import Facility from './components/facilities/Facility';
 import TheCreepyCastle from './components/attractions/TheCreepyCastle';
+import Tornado from './components/attractions/Tornado';
 
 const router = createHashRouter([
   {
@@ -40,6 +41,10 @@ const router = createHashRouter([
           {
             path: 'the-creepy-castle',
             element: <TheCreepyCastle />
+          },
+          {
+            path: 'tornado',
+            element: <Tornado />
           },
           {
             path: 'facilities/:id',

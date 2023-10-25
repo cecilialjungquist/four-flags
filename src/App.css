@@ -63,15 +63,17 @@
 }
 
 #map-dot-0,
-#map-dot-3,
-#map-dot-4,
-#map-dot-7,
-#map-dot-8 {
+#map-dot-1,
+#map-dot-2,
+#map-dot-5,
+#map-dot-6,
+#map-dot-8, 
+#map-dot-10,
+#map-dot-11  {
     transform: rotate(.75turn);
 }
 
-#map-dot-5,
-#map-dot-6 {
+#map-dot-7 {
     transform: rotate(.5turn);
 }
 
