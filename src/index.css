@@ -13,13 +13,14 @@ font-family: 'Playfair Display', serif;
   text-decoration: none;
   color: white;
   font-family: 'Playfair Display', serif; 
+  list-style: none;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1a1a1a;
+  background-color: #111111;
 }
 
 #root {
@@ -27,6 +28,8 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   padding: 2rem;
+  background-color: #1a1a1a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -57,11 +60,15 @@ p {
 
 button {
   border: none;
-  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
+  background-color: transparent;
+}
+
+nav a {
+  font-size: 1.2rem;
 }
 
 a.active {

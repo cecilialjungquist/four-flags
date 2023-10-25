@@ -29,7 +29,7 @@ function useFetchParkInfo( options = {} ) {
         {
             id: 3,
             name: 'Bunny Jump',
-            desc: 'For kids, a carousel that jumps up and down, filling the air with laughter and excitement. At Four Flags, the Bunny Jump promises endless joy for the little ones!',
+            desc: "Step into a world of pure childhood delight on the Bunny Jump carousel! Designed for our youngest adventurers, this whimsical ride bounces up and down, filling the air with infectious laughter and boundless excitement. At Four Flags, the Bunny Jump isn't just a ride; it's an enchanting journey that promises endless joy and cherished memories for the little ones!",
             offsetDistance: '18%',
             isAttraction: true,
             svg: null
