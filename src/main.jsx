@@ -12,6 +12,7 @@ import TheTeaCup from './components/attractions/TheTeaCup';
 import Facility from './components/facilities/Facility';
 import TheCreepyCastle from './components/attractions/TheCreepyCastle';
 import Tornado from './components/attractions/Tornado';
+import LoopWhoop from './components/attractions/LoopWhoop';
 
 const router = createHashRouter([
   {
@@ -45,6 +46,10 @@ const router = createHashRouter([
           {
             path: 'tornado',
             element: <Tornado />
+          },
+          {
+            path: 'loop-whoop',
+            element: <LoopWhoop />
           },
           {
             path: 'facilities/:id',

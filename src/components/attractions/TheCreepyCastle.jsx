@@ -6,9 +6,6 @@ import './TheCreepyCastle.css';
 function TheCreepyCastle() {
     const attraction = useFetchParkInfo({ name: "The Creepy Castle" });
 
-    
-
-    // className='the-creepy-castle__house'
     return (
         <Overlay className={'the-creepy-castle'}>
             <OverlayHeader name={attraction.name} desc={attraction.desc} />

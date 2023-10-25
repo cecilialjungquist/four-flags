@@ -69,11 +69,12 @@
 #map-dot-6,
 #map-dot-8, 
 #map-dot-10,
-#map-dot-11  {
+#map-dot-11 {
     transform: rotate(.75turn);
 }
 
-#map-dot-7 {
+#map-dot-7,
+#map-dot-12 {
     transform: rotate(.5turn);
 }
 

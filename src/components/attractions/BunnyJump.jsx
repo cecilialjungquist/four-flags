@@ -12,7 +12,7 @@ function BunnyJump() {
 
             <section className="bunny-jump__svg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="361" height="331" viewBox="0 0 361 331" fill="none">
-                    <path d="M2 329H180.5M359 329H180.5M180.5 329V2" stroke="#FC6BFF" strokeWidth="4" strokeLinecap="round" />
+                    <path d="M2 329H180.5M359 329H180.5M180.5 329V2" stroke="#FC6BFF" strokeWidth="2" strokeLinecap="round" />
                 </svg>
                 <svg className="bunny-jump__dots" xmlns="http://www.w3.org/2000/svg" width="24" height="152" viewBox="0 0 24 152" fill="none">
                     <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z" fill="#FC6BFF" />

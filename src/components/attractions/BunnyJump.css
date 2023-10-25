@@ -8,14 +8,14 @@
     left: 2px;
     offset: path("M0 327H178.5M357 327H178.5M178.5 327V0");
     offset-distance: 55%;
-    animation: move 7s ease-out infinite, falling 7s ease-in-out  infinite;;
+    animation: jump 7s ease-out infinite, falling 7s ease-in-out  infinite;;
 }
 
 .bunny-jump__dots svg {
     animation: falling 7s ease-in-out  infinite;
 }
 
-@keyframes move {
+@keyframes jump {
     0% {
         offset-distance: 55%;
     }

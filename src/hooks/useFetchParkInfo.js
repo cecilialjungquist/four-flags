@@ -98,6 +98,15 @@ function useFetchParkInfo( options = {} ) {
             isAttraction: true,
             svg: null
         },
+        {
+            id: 12,
+            name: 'Loop Whoop',
+            desc: 'Prepare for an adrenaline-pumping adventure on the Loop Whoop! This roller coaster is renowned for its heart-racing loops and twists, making it the shining star of Four Flags. Feel the rush as you navigate through a series of exhilarating loops on this iconic ride, and experience the kind of excitement that defines our world-class amusement park! Whoop whoop!',
+            offsetDistance: '85%',
+            isAttraction: true,
+            svg: null
+        }
+        ,
     ];
     
 
