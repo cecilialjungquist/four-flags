@@ -113,17 +113,17 @@ function useFetchParkInfo( info = {} ) {
         {
             title: 'HotelParkVista Luxury Inn',
             desc: 'Indulge in luxury at our hotel, right in the heart of the park!',
-            img: null,
+            svg: 'hotel.svg'
         },
         {
             title: 'Pine Grove Hideaways',
             desc: 'Step into a fairytale and escape to a tranquil haven in our charming cottages, perfect for both families and couples seeking a cozy and peaceful getaway.',
-            img: null
+            svg: 'cottage.svg'
         },
         {
             title: 'EcoGlamp Oasis',
             desc: 'Discover the perfect blend of adventure and relaxation in our budget-friendly glamping experience withextrodinary comfort.',
-            img: null
+            svg: 'glamping.svg'
         }
     ]
     

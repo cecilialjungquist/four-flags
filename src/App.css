@@ -68,8 +68,7 @@
 /* PARK PAGE */
 
 .park {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
     gap: 1rem;
 }
 
@@ -167,4 +166,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* ACCOMODATION PAGE */
+
+.accomodation__cardstack {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+
+.card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 320px;
+}
+
+.card figure {
+    height: 320px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card--small {
+    max-width: 400px;
+    flex-direction: column;
 }
