@@ -4,7 +4,7 @@ import OverlayHeader from "../OverlayHeader";
 import './Tornado.css';
 
 function Tornado() {
-    const attraction = useFetchParkInfo({ name: 'Tornado' });
+    const [ attraction ] = useFetchParkInfo({ attractions: true }).filter(attraction => attraction.name === 'Tornado');
     console.log(attraction)
 
     return (

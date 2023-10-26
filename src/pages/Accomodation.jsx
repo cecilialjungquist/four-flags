@@ -5,6 +5,8 @@ import Button from "../components/Button";
 function Accomodation() {
     const { animate, initial } = useStandardAnimation();
 
+
+
     return ( 
         <section className="accomodation">
         <motion.section animate={animate} initial={initial}>
@@ -14,6 +16,9 @@ function Accomodation() {
             <p>At Four Flags, we're committed to providing you with a stay that's as unforgettable as the park itself. Book your accommodations with us, and let the enchantment begin!</p>
             <Button>Book your stay here</Button>
         </motion.section>
+        <section className="accomodation__cardstack">
+
+        </section>
         </section>
     );
 }

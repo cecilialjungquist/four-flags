@@ -1,7 +1,7 @@
-function useFetchParkInfo( options = {} ) {
-    const { isAttraction = null, name = null } = options;
+function useFetchParkInfo( info = {} ) {
+    const { park, attractions, accomodation } = info;
 
-    const parkInfo = [
+    const parkItems = [
         {
             id: 0,
             name: 'Entrance',
@@ -108,17 +108,41 @@ function useFetchParkInfo( options = {} ) {
         }
         ,
     ];
-    
 
-    if (name) {
-        return parkInfo.find(item => item.name === name) || null;
-    } else if (isAttraction === true) {
-        return parkInfo.filter(item => item.isAttraction === true);
-    } else if (isAttraction === false) {
-        return parkInfo.filter(item => item.isAttraction === false)
-    } else {
-        return parkInfo;
+    const accomodationItems = [
+        {
+            title: 'HotelParkVista Luxury Inn',
+            desc: 'Indulge in luxury at our hotel, right in the heart of the park!',
+            img: null,
+        },
+        {
+            title: 'Pine Grove Hideaways',
+            desc: 'Step into a fairytale and escape to a tranquil haven in our charming cottages, perfect for both families and couples seeking a cozy and peaceful getaway.',
+            img: null
+        },
+        {
+            title: 'EcoGlamp Oasis',
+            desc: 'Discover the perfect blend of adventure and relaxation in our budget-friendly glamping experience withextrodinary comfort.',
+            img: null
+        }
+    ]
+    
+    if (park === true) {
+        return parkItems;
     }
+
+    if (attractions === true) {
+        return parkItems.filter(item => item.isAttraction === true);
+    }
+
+    if (attractions === false) {
+        return parkItems.filter(item => item.isAttraction === false);
+    }
+
+    if (accomodation === true) {
+        return accomodationItems;
+    }
+
 }
 
 export default useFetchParkInfo;

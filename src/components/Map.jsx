@@ -3,7 +3,7 @@ import MapDot from "./MapDot";
 import useFetchParkInfo from "../hooks/useFetchParkInfo";
 
 function Map() {
-    const mapDots = useFetchParkInfo();
+    const mapDots = useFetchParkInfo({ park: true });
 
     const renderedDots = mapDots.map(dot => <MapDot 
         name={dot.name}

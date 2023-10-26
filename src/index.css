@@ -35,6 +35,8 @@ body {
 main {
   max-width: 1280px;
   margin: 4rem auto;
+  display: flex;
+  justify-content: center;
 }
 
 h1, h2, h3 {

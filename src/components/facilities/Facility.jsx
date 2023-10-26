@@ -5,7 +5,7 @@ import useFetchParkInfo from "../../hooks/useFetchParkInfo";
 
 function Facility() {
     const id = Number(useParams().id);
-    const [ facility ] = useFetchParkInfo({ isAttraction: false }).filter(facility => facility.id === id);
+    const [ facility ] = useFetchParkInfo({ attractions: false }).filter(facility => facility.id === id);
 
     return ( 
         <Overlay className={"facility"}>
