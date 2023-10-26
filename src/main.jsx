@@ -13,7 +13,7 @@ import Facility from './components/facilities/Facility';
 import TheCreepyCastle from './components/attractions/TheCreepyCastle';
 import Tornado from './components/attractions/Tornado';
 import LoopWhoop from './components/attractions/LoopWhoop';
-import PageNotFound from './components/PageNotFound';
+import PageNotFound from './pages/PageNotFound';
 
 const router = createHashRouter([
   {
