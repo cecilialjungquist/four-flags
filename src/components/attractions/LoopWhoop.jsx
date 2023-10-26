@@ -4,7 +4,7 @@ import OverlayHeader from "../OverlayHeader";
 import './LoopWhoop.css';
 
 function LoopWhoop() {
-    const [ attraction ] = useFetchParkInfo({ attractions: true }).filter(attraction => attraction.name === "Loop Whoop");
+    const [ attraction ] = useFetchParkInfo('attraction').filter(attraction => attraction.name === "Loop Whoop");
 
 
     return (

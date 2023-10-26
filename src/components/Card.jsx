@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-function Card({ className = '', title, svg, desc }) {
+function Card({ className = '', name, svg, desc }) {
 
     function handleClick() {
         
@@ -12,7 +12,7 @@ function Card({ className = '', title, svg, desc }) {
                 <figure>
                     <img src={`src/assets/${svg}`} />
                 </figure>
-                <h3>{title}</h3>
+                <h3>{name}</h3>
                 <p>{desc}</p>
             </section>
             <Button action={handleClick}>Book you stay now!</Button>

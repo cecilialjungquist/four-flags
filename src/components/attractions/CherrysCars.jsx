@@ -4,7 +4,7 @@ import './CherrysCars.css';
 import useFetchParkInfo from "../../hooks/useFetchParkInfo";
 
 function CherrysCars() {
-    const [ attraction ] = useFetchParkInfo({ attractions: true }).filter(attraction => attraction.name === "Cherry's Cars");
+    const [ attraction ] = useFetchParkInfo('attraction').filter(attraction => attraction.name === "Cherry's Cars");
 
 
 

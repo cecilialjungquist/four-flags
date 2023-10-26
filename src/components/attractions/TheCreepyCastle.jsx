@@ -4,7 +4,7 @@ import useFetchParkInfo from '../../hooks/useFetchParkInfo';
 import './TheCreepyCastle.css';
 
 function TheCreepyCastle() {
-    const [ attraction ] = useFetchParkInfo({ attractions: true }).filter(attraction => attraction.name === "The Creepy Castle");
+    const [ attraction ] = useFetchParkInfo('attraction').filter(attraction => attraction.name === "The Creepy Castle");
 
 
     return (

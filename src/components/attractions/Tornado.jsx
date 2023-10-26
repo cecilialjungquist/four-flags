@@ -5,7 +5,6 @@ import './Tornado.css';
 
 function Tornado() {
     const [ attraction ] = useFetchParkInfo({ attractions: true }).filter(attraction => attraction.name === 'Tornado');
-    console.log(attraction)
 
     return (
         <Overlay className={'tornado'} >

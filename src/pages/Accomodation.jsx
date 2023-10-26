@@ -6,7 +6,7 @@ import Card from "../components/Card";
 
 function Accomodation() {
     const { animate, initial } = useStandardAnimation();
-    const accomodation = useFetchParkInfo({ accomodation: true });
+    const accomodation = useFetchParkInfo('accomodation');
 
     const cards = accomodation.map((item, i) => {
         return (

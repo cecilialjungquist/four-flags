@@ -4,7 +4,7 @@ import Overlay from '../Overlay';
 import useFetchParkInfo from '../../hooks/useFetchParkInfo';
 
 function BunnyJump() {
-    const [ attraction ] = useFetchParkInfo({ attractions: true }).filter(attraction => attraction.name === "Bunny Jump");
+    const [ attraction ] = useFetchParkInfo('attraction').filter(attraction => attraction.name === "Bunny Jump");
 
 
     return (

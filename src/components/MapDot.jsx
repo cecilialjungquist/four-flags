@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import useStandardAnimation from "../hooks/useStandardAnimation";
 import { useNavigate } from "react-router-dom";
 
-function MapDot({ name, offsetDistance, isAttraction, id }) {
+function MapDot({ name, offsetDistance, type, id }) {
     const { initial, animate } = useStandardAnimation();
     const navigate = useNavigate();
 
@@ -26,11 +26,11 @@ function MapDot({ name, offsetDistance, isAttraction, id }) {
     };
 
     function handleClick() {
-        if (isAttraction) {
+        if (type === 'attraction') {
             const attraction = name.split(' ').join('-').replace("'", '').toLowerCase();
             navigate(`/the-park/${attraction}`);
         } else {
-            navigate(`/the-park/facilities/${id}`);
+            navigate(`/the-park/park-feature/${id}`);
         }
     }
 

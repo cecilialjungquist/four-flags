@@ -69,14 +69,13 @@
 
 .park {
     display: flex;
-    gap: 1rem;
 }
 
 /* MAP COMPONENT */
 
 .map {
     position: relative;
-    padding: 3rem;
+    padding: 3rem 3rem 3rem 4rem;
     margin-top: 2.5rem;
 }
 
@@ -86,7 +85,7 @@
     position: absolute;
     top: 25px;
     text-align: center;
-    offset-path: path("M1.5 1.5V429H363H635V763H217V1081.5H343.5V944H543.5V1081.5H635V1190.5H1.5");
+    offset-path: path("M458.565 171.132V2H2V171.132H348.949L458.565 171.132ZM458.565 171.132L610 171.132V647.841H208.826V1102.43H330.234V906.177H522.183V1102.43H610V1258H2V980.711V476.742H458.565V171.132Z");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,18 +99,18 @@
 }
 
 #map-dot-0,
-#map-dot-1,
-#map-dot-2,
 #map-dot-5,
 #map-dot-6,
-#map-dot-8, 
 #map-dot-10,
-#map-dot-11 {
+#map-dot-11,
+#map-dot-13 {
     transform: rotate(.75turn);
 }
 
 #map-dot-7,
-#map-dot-12 {
+#map-dot-8,
+#map-dot-12,
+#map-dot-14 {
     transform: rotate(.5turn);
 }
 
@@ -149,6 +148,15 @@
     border-radius: 1rem;
     gap: 3rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* PARK FEATURE COMPONENT */
+
+.park-feature figure {
+    max-width: 300px;
+}
+.park-feature figure img {
+    width: 100%;
 }
 
 /* BUTTON COMPONENT */
