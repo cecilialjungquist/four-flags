@@ -12,7 +12,7 @@ function Tornado() {
             <OverlayHeader name={attraction.name} desc={attraction.desc} />
             <section className="tornado__animation">
                 <svg className="tornado__tower" xmlns="http://www.w3.org/2000/svg" width="244" height="332" viewBox="0 0 244 332" fill="none">
-                    <path d="M2 330H122M242 330H122M122 330V3M122 3L72 53H172L122 3Z" stroke="#FC6BFF" stroke-width="2" strokeLinecap="round" />
+                    <path d="M2 330H122M242 330H122M122 330V3M122 3L72 53H172L122 3Z" stroke="#FC6BFF" strokeWidth="2" strokeLinecap="round" />
                 </svg>
                 <div className="tornado__dots">
                     <svg xmlns="http://www.w3.org/2000/svg" width="152" height="24" viewBox="0 0 152 24" fill="none">

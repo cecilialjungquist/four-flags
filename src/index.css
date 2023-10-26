@@ -69,7 +69,7 @@ button {
 
 nav a {
   font-size: 1.2rem;
-  transition: .2s;
+  transition: color .2s;
 }
 
 nav a:hover {
