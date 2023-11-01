@@ -12,7 +12,7 @@ font-family: 'Playfair Display', serif;
   font-weight: 400;
   text-decoration: none;
   color: white;
-  font-family: 'Playfair Display', serif; 
+  font-family: 'Playfair Display', serif;
   list-style: none;
 }
 
@@ -30,6 +30,8 @@ body {
   padding: 2rem;
   background-color: #1a1a1a;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
 }
 
 main {
@@ -39,7 +41,10 @@ main {
   justify-content: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h1 span {
   line-height: 1.1;
   font-family: 'Paytone One', sans-serif;
   margin: 1em 0;

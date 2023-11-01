@@ -124,7 +124,7 @@ function useFetchParkInfo(parkType) {
         {
             id: 15,
             name: 'EcoGlamp Oasis',
-            desc: 'Discover the perfect blend of adventure and relaxation in our budget-friendly glamping experience withextrodinary comfort.',
+            desc: 'Discover the perfect blend of adventure and relaxation in our budget-friendly glamping experience with extrodinary comfort.',
             offsetDistance: '90%',
             type: 'accomodation',
             svg: 'glamping.svg'

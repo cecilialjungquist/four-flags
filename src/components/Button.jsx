@@ -4,7 +4,7 @@ function Button({ action, children }) {
 
     const buttonVariants = {
         normal: { 
-            boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
+            boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.8)',
             scale: 1 
         },
         hover: { 
@@ -12,7 +12,7 @@ function Button({ action, children }) {
             scale: 1,
         },
         tap: {
-            boxShadow: 'inset 0px 3px 5px rgba(0, 0, 0, 0.5)',
+            boxShadow: 'inset 0px 3px 5px rgba(0, 0, 0, 0.8)',
             scale: .9
         }
     };

@@ -57,6 +57,7 @@ function HamburgerMenu({ options }) {
         [
             ".path-top",
             { d: showMenu ? "M2 31.6985L44 2" : "M2 31.6985L44 31.6985"},
+            // Starts at the same time as prev animation = 0
             { at: "<" }
         ],
         [

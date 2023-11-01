@@ -41,14 +41,15 @@
     z-index: 999;
 }
 
-.hamburger-menu > nav {
+.hamburger-menu>nav {
     z-index: 998;
     position: fixed;
     top: 0;
     right: 0;
     width: 60vw;
     height: 100vh;
-    width: 100%;;
+    width: 100%;
+    ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +58,7 @@
     background-color: #2e7a82;
 }
 
-.hamburger-menu > nav a {
+.hamburger-menu>nav a {
     font-size: 1.4rem;
 }
 
@@ -140,7 +141,7 @@
     align-items: center;
 }
 
-.overlay > article {
+.overlay>article {
     max-width: 900px;
     background-color: #1a1a1a;
     padding: 4rem;
@@ -155,6 +156,7 @@
 .park-feature figure {
     max-width: 300px;
 }
+
 .park-feature figure img {
     width: 100%;
 }
@@ -178,9 +180,83 @@
 
 /* ACCOMODATION PAGE */
 
+.accomodation__section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem ;
+}
+
 .accomodation__cardstack {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem
+}
+
+/* HOME PAGE */
+
+.home {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home__h1 {
+    /* position: relative; */
+    z-index: 1;
+    font-size: 6rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+}
+
+.home__h1 span {
+    display: inline-block;
+}
+
+.home__h4 {
+    color: #FC6BFF;
+}
+
+.home__balloons img {
+    position: absolute;
+    z-index: 0;
+    bottom: -200px;
+}
+.home__balloons img:nth-of-type(1) {
+    left: 10%;
+}
+.home__balloons img:nth-of-type(2) {
+    left: 20%;
+    z-index: 2;
+}
+.home__balloons img:nth-of-type(3) {
+    left: 30%;
+}
+.home__balloons img:nth-of-type(4) {
+    left: 40%;
+}
+.home__balloons img:nth-of-type(5) {
+    left: 50%;
+}
+.home__balloons img:nth-of-type(6) {
+    left: 60%;
+    z-index: 2;
+}
+.home__balloons img:nth-of-type(7) {
+    left: 70%;
+}
+.home__balloons img:nth-of-type(8) {
+    left: 80%;
+}
+.home__balloons img:nth-of-type(9) {
+    left: 85%;
+}
+.home__balloons img:nth-of-type(10) {
+    left: 3%;
 }
 
 /* CARD */
@@ -191,6 +267,10 @@
     flex-direction: row;
     justify-content: space-between;
     min-width: 320px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px #FC6BFF;
 }
 
 .card figure {
