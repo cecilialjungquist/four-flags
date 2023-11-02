@@ -1,3 +1,5 @@
+/* *** STYLING FOR COMPONENTS AND PAGES *** */
+
 /* TOP HEADER COMPONENT */
 
 .top-header {
@@ -64,12 +66,6 @@
 
 .hamburger-menu svg {
     scale: .6;
-}
-
-/* PARK PAGE */
-
-.park {
-    display: flex;
 }
 
 /* MAP COMPONENT */
@@ -169,6 +165,35 @@
     border-radius: .5em;
 }
 
+/* CARD COMPONENT */
+
+.card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 320px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px #FC6BFF;
+}
+
+.card figure {
+    height: 320px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card--small {
+    max-width: 400px;
+    flex-direction: column;
+}
+
 /* PAGE NOT FOUND PAGE */
 
 .page-not-found {
@@ -258,9 +283,25 @@
     left: 3%;
 }
 
-.home__button {
+.home button {
     position: relative;
     z-index: 3;
+    overflow: hidden;
+    transition: transform .3s;
+    animation: float 1s ease-in-out infinite alternate;
+}
+
+.home button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: translateX(-120%) skew(-20deg);
+    animation: shine .4s linear;
+    animation-delay: 4s;
 }
 
 .home__scaling-box {
@@ -272,31 +313,28 @@
     z-index: 4;
 }
 
-/* CARD */
+/* PARK PAGE */
 
-.card {
-    padding: 2rem;
+.park {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-width: 320px;
 }
 
-.card:hover {
-    box-shadow: 0px 0px 10px #FC6BFF;
+/* KEY FRAMES */
+
+@keyframes shine {
+    0% {
+        transform: translateX(-120%) skew(-50deg);
+    } 
+    100% {
+        transform: translateX(140%) skew(-50deg);
+    }
 }
 
-.card figure {
-    height: 320px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card--small {
-    max-width: 400px;
-    flex-direction: column;
+@keyframes float {
+    from {
+        transform: translateY(0) translateZ(0);
+    }
+    to {
+        transform: translateY(-10px) translateZ(0);
+    }
 }

@@ -4,13 +4,9 @@ import Button from "./Button";
 function Card({ className = '', name, svg, summary }) {
 
     const cardVariants = {
-        hidden: {
-            opacity: 0
-        },
         normal: {
             boxShadow: '0px 0px 0px #FC6BFF',
             scale: 1,
-            opacity: 1
         },
         hover: {
             boxShadow: '0px 0px 10px #FC6BFF',
@@ -31,8 +27,7 @@ function Card({ className = '', name, svg, summary }) {
         <motion.article
             variants={cardVariants}
             whileHover="hover"
-            initial="hidden"
-            animate="normal"
+            initial="normal"
             transition="transition"
             className={`card ${className}`}
         >

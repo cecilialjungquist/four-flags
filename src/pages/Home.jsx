@@ -15,7 +15,7 @@ function Home() {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 1.6,
+            delay: 1,
             duration: 1,
             type: 'spring',
             damping: 10,
@@ -34,7 +34,8 @@ function Home() {
     for (let i = 0; i < 10; i++) {
         const transition = {
             duration: Math.random() + 2,
-            delay: Math.random() + .5
+            delay: Math.random() + .6,
+            ease: 'easeIn'
         }
 
         if (i % 2 === 0) {
@@ -48,7 +49,7 @@ function Home() {
         await animate([
             [
                 "button",
-                { scale: 0, color: '#2e7a82', boxShadow: '0px 0px 0px transparent' }
+                { opacity: 0 }
             ],
             [
                 ".home__h4",
@@ -75,12 +76,12 @@ function Home() {
 
     return (
         <section className="home" ref={scope}>
-            <motion.h4 initial={{ opacity: 0.3 }} animate={{ opacity: 1, y: 0 }} className="home__h4">- STEP INTO A WORLD OF WONDER -</motion.h4>
+            <motion.h4 initial={{ opacity: 0.3 }} animate={{ opacity: 1, y: 0 }} className="home__h4">- STEP INTO A WORLD OF WONDERS -</motion.h4>
             <motion.h1 initial={initial} animate={textAnimation} className="home__h1">
                 Four Flags
             </motion.h1>
-            <motion.div initial={{ opacity: 0, y: -32 }} animate={{ opacity: 1, transition: { delay: 2, duration: 2 } }}>
-                <Button className="home__button" action={handleClick}>
+            <motion.div initial={{ opacity: 0, y: '60vh' }} animate={{ opacity: 1, y: 0, transition: { delay: 1.3, duration: 2, ease: 'easeOut' } }}>
+                <Button action={handleClick}>
                     Your Journey Starts Here
                 </Button>
                 <div className="home__scaling-box"></div>

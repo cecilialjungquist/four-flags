@@ -20,7 +20,8 @@ function Map() {
         visible: {
             pathLength: 1,
             transition: {
-                duration: 3
+                duration: 2,
+                ease: 'easeIn'
             }
         }
     }
