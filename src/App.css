@@ -3,9 +3,15 @@
 /* TOP HEADER COMPONENT */
 
 .top-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+}
+.top-header > *:nth-child(1) {
+    justify-self: start;
+}
+.top-header > *:nth-child(3) {
+    justify-self: end;
 }
 
 .top-header__logo {
@@ -66,6 +72,11 @@
 
 .hamburger-menu svg {
     scale: .6;
+    transition: stroke .3s;
+}
+
+.hamburger-menu svg:hover path {
+    stroke: #FC6BFF;
 }
 
 /* MAP COMPONENT */
@@ -282,6 +293,30 @@
 .home__balloons img:nth-of-type(10) {
     left: 3%;
 }
+.home__balloons img:nth-of-type(11) {
+    left: 15%;
+}
+.home__balloons img:nth-of-type(12) {
+    left: 25%;
+}
+.home__balloons img:nth-of-type(13) {
+    left: 35%;
+}
+.home__balloons img:nth-of-type(14) {
+    left: 45%;
+}
+.home__balloons img:nth-of-type(15) {
+    left: 55%;
+}
+.home__balloons img:nth-of-type(16) {
+    left: 65%;
+}
+.home__balloons img:nth-of-type(17) {
+    left: 75%;
+}
+.home__balloons img:nth-of-type(18) {
+    left: 88%;
+}
 
 .home button {
     position: relative;
@@ -301,7 +336,7 @@
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     transform: translateX(-120%) skew(-20deg);
     animation: shine .4s linear;
-    animation-delay: 4s;
+    animation-delay: 4.5s;
 }
 
 .home__scaling-box {

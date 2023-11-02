@@ -76,9 +76,9 @@ function HamburgerMenu({ options }) {
         <section className="hamburger-menu">
             <button>
                 <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34">
-                    <motion.path className="path-top" d="M2 31.6985L44 31.6985" stroke="#FFF" strokeWidth="4" strokeLinecap="round" />
+                    <path className="path-top" d="M2 31.6985L44 31.6985" stroke="#FFF" strokeWidth="4" strokeLinecap="round" />
                     <motion.path className="path-middle" initial={{ opacity: 1 }} d="M2 17L44 17" stroke="#FFF" strokeWidth="4" strokeLinecap="round" fill="#FFF" />
-                    <motion.path className="path-bottom" d="M2 2L44 2" stroke="#FFF" strokeWidth="4" strokeLinecap="round" fill="#FFF" />
+                    <path className="path-bottom" d="M2 2L44 2" stroke="#FFF" strokeWidth="4" strokeLinecap="round" fill="#FFF" />
                 </svg>
             </button>
             <AnimatePresence>
