@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import Button from "./Button";
 
-function Card({ className = '', name, svg, desc }) {
+function Card({ className = '', name, svg, summary }) {
 
-    const hoverVariants = {
+    const cardVariants = {
+        hidden: {
+            opacity: 0
+        },
         normal: {
             boxShadow: '0px 0px 0px #FC6BFF',
-            scale: 1
+            scale: 1,
+            opacity: 1
         },
         hover: {
             boxShadow: '0px 0px 10px #FC6BFF',
@@ -25,9 +29,10 @@ function Card({ className = '', name, svg, desc }) {
 
     return (
         <motion.article
-            variants={hoverVariants}
+            variants={cardVariants}
             whileHover="hover"
-            initial="normal"
+            initial="hidden"
+            animate="normal"
             transition="transition"
             className={`card ${className}`}
         >
@@ -36,7 +41,7 @@ function Card({ className = '', name, svg, desc }) {
                     <img src={`src/assets/${svg}`} />
                 </figure>
                 <h3>{name}</h3>
-                <p>{desc}</p>
+                <p>{summary}</p>
             </section>
             <Button action={handleClick}>Book your stay now!</Button>
         </motion.article>

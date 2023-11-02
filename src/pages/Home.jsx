@@ -15,7 +15,7 @@ function Home() {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 1,
+            delay: 1.6,
             duration: 1,
             type: 'spring',
             damping: 10,
@@ -34,7 +34,7 @@ function Home() {
     for (let i = 0; i < 10; i++) {
         const transition = {
             duration: Math.random() + 2,
-            delay: Math.random()
+            delay: Math.random() + .5
         }
 
         if (i % 2 === 0) {
@@ -61,11 +61,10 @@ function Home() {
                 { at: "-0.1" }
             ],
             [
-                "button",
+                ".home__scaling-box",
                 {
-                    color: '#FC6BFF',
                     backgroundColor: '#FC6BFF',
-                    scale: 20
+                    scale: 100
                 },
                 { at: "-0.1" }
             ]
@@ -80,10 +79,11 @@ function Home() {
             <motion.h1 initial={initial} animate={textAnimation} className="home__h1">
                 Four Flags
             </motion.h1>
-            <motion.div initial={{ opacity: 0, y: -32 }} animate={{ opacity: 1, transition: { delay: 2, duration: 2 }}}>
+            <motion.div initial={{ opacity: 0, y: -32 }} animate={{ opacity: 1, transition: { delay: 2, duration: 2 } }}>
                 <Button className="home__button" action={handleClick}>
                     Your Journey Starts Here
                 </Button>
+                <div className="home__scaling-box"></div>
             </motion.div>
 
             <div className="home__balloons">

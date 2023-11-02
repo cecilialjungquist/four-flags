@@ -28,7 +28,7 @@ function Map() {
     return (
         <section className="map">
             <svg className="map-svg" xmlns="http://www.w3.org/2000/svg" width="612" height="1260" viewBox="0 0 612 1260" fill="none">
-                <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M458.565 171.132V2H2V171.132H348.949L458.565 171.132ZM458.565 171.132L610 171.132V647.841H208.826V1102.43H330.234V906.177H522.183V1102.43H610V1258H2V980.711V476.742H458.565V171.132Z" stroke="#2e7a82" strokeWidth="4" strokeLinecap="round" />
+                <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M2 74V168H612V646H208.5V1099.5H328.5V904H524V1099.5H612V1255H3V475H458.5V2H2V74Z" stroke="#2e7a82" strokeWidth="4" strokeLinecap="round" />
             </svg>
             {renderedDots}
         </section>

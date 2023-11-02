@@ -258,6 +258,20 @@
     left: 3%;
 }
 
+.home__button {
+    position: relative;
+    z-index: 3;
+}
+
+.home__scaling-box {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    z-index: 4;
+}
+
 /* CARD */
 
 .card {

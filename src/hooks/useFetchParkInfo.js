@@ -108,7 +108,8 @@ function useFetchParkInfo(parkType) {
         {
             id: 13,
             name: 'ParkVista Luxury Inn',
-            desc: 'Indulge in luxury at our hotel, right in the heart of the park!',
+            desc: 'Indulge in luxury at ParkVista Luxury Inn, right in the heart of the park! Experience opulent accommodations that complement your unforgettable adventure at Four Flags.',
+            summary: 'Experience unparalleled luxury at our hotel, nestled in the heart of the park, where opulence meets adventure!',
             offsetDistance: '58%',
             type: 'accomodation',
             svg: 'hotel.svg'
@@ -116,7 +117,8 @@ function useFetchParkInfo(parkType) {
         {
             id: 14,
             name: 'Pine Grove Hideaways',
-            desc: 'Step into a fairytale and escape to a tranquil haven in our charming cottages, perfect for both families and couples seeking a cozy and peaceful getaway.',
+            desc: 'Pine Grove Hideaways is a picturesque escape into a world of enchantment. Nestled amidst the beauty of nature, our charming cottages offer a serene retreat for families and couples alike. Experience the allure of the forest, cozy up by the fireplace, and create cherished memories in a peaceful, rustic setting.',
+            summary: 'Step into a fairytale and escape to a tranquil haven in our charming cottages, perfect for both families and couples seeking a cozy and peaceful getaway.',
             offsetDistance: '5%',
             type: 'accomodation',
             svg: 'cottage.svg'
@@ -124,7 +126,8 @@ function useFetchParkInfo(parkType) {
         {
             id: 15,
             name: 'EcoGlamp Oasis',
-            desc: 'Discover the perfect blend of adventure and relaxation in our budget-friendly glamping experience with extrodinary comfort.',
+            desc: 'EcoGlamp Oasis is your gateway to a remarkable outdoor experience without sacrificing comfort. Immerse yourself in the heart of nature while enjoying the luxuries of glamping. Unplug, unwind, and connect with the wilderness. It’s time to embark on an adventure where relaxation and excitement intertwine.',
+            summary: 'Discover the perfect blend of adventure and relaxation in our budget-friendly glamping experience with extrodinary comfort.',
             offsetDistance: '90%',
             type: 'accomodation',
             svg: 'glamping.svg'

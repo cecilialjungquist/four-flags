@@ -13,7 +13,7 @@ function Accomodation() {
             <Card
                 name={item.name}
                 svg={item.svg}
-                desc={item.desc}
+                summary={item.summary}
                 className="card--small"
                 key={i}
             />
